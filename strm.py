@@ -102,7 +102,7 @@ def predict_roles(model, vectorizer, encoder, text, top_n=5):
 # In[9]:
 
 
-with open ("skills.json") as f:
+with open ("skills (1).json") as f:
     job_skills = json.load(f)
 
 
