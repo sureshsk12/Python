@@ -120,7 +120,7 @@ if uploaded_file is not None:
         st.write(text[:500] + "..." if len(text) > 500 else text)
         
         processed = preprocess(text)
-        predicitions = predict_roles(model, vect, encoder, processed)
+        predictions = predict_roles(model, vect, encoder, processed)
         
         st.subheader("Top predicted Roles")
         for role, prob in predictions.items():
